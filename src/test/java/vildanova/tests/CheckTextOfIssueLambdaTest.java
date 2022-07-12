@@ -33,7 +33,7 @@ public class CheckTextOfIssueLambdaTest extends TestBase {
             takePageSource();
         });
 
-        step("Ищем репозиторий " + searchRepository, () -> {
+        step("Найти репозиторий " + searchRepository, () -> {
             $(".header-search-input").click();
             $(".header-search-input").sendKeys(searchRepository);
             $(".header-search-input").submit();
@@ -41,13 +41,13 @@ public class CheckTextOfIssueLambdaTest extends TestBase {
             takePageSource();
         });
 
-        step("Переходим в репозиторий " + linkRepository, () -> {
+        step("Перейти в репозиторий " + linkRepository, () -> {
             $(By.linkText(linkRepository)).click();
             takeScreenshot();
             takePageSource();
         });
 
-        step("Проверяем наличие вкладки Issue", () -> {
+        step("Проверить наличие вкладки Issue", () -> {
             $(id("issues-tab")).should(Condition.visible);
             takeScreenshot();
             takePageSource();

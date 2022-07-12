@@ -16,7 +16,7 @@ public class CheckTextOfIssueAnnotatedTests extends TestBase {
     @Link(name = "GitHub", url = "https://github.com")
     @Feature("Разделы в репозитории")
     @Severity(SeverityLevel.NORMAL)
-    @DisplayName("Проверка наличия раздела Issues на странице репозитория на GitHub")
+    @DisplayName("Проверить наличие раздела Issues на странице репозитория на GitHub")
     public void testGithubAnnotated() {
         webSteps.openPage();
         webSteps.searchForRepository(searchRepository);
